@@ -1,5 +1,5 @@
 # UL Benchmarks games performance estimation service for PC
-This is Drupal 10 module that demonstartes using Retails API in the following details:
+This is Drupal 10 module that demonstartes using [Retails API](https://support.benchmarks.ul.com/support/solutions/folders/44001219896?_ga=2.233832286.1974292819.1673444843-1911313958.1668416513) in the following details:
 * Using API key signed Auth header in HTTP requests
 * Querying the API and parsing the output
 * Caching the data for efficient use Retails API
