@@ -1,0 +1,6 @@
+ul_fps_estimation.admin:
+  title: 'UL Benchmarks'
+  description: 'games performance estimation settings'
+  parent: system.admin_config_development
+  route_name: ul_fps_estimation.content
+  weight: 100

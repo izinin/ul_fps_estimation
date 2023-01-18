@@ -1,0 +1,6 @@
+name: UL Benchmarks example application
+description: UL Benchmarks games performance estimation service for PC
+package: Custom
+
+type: module
+core_version_requirement: ^9.4 || ^10

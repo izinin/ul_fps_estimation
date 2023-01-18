@@ -1,0 +1,7 @@
+ul_fps_estimation.content:
+  path: '/ul_fps_estimation'
+  defaults:
+    _controller: '\Drupal\ul_fps_estimation\Controller\UlFpsEstimationController::content'
+    _title: 'games performance estimation service for PC'
+  requirements:
+    _permission: 'access content'
