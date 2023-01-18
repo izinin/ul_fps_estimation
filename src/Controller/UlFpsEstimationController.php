@@ -1,10 +1,10 @@
 <?php
 /**
  * @file
- * Contains \Drupal\hello_world\Controller\HelloController.
+ * Contains \Drupal\ul_fps_estimation\Controller\UlFpsEstimationController.
  */
-namespace Drupal\hello_world\Controller;
-class HelloController {
+namespace Drupal\ul_fps_estimation\Controller;
+class UlFpsEstimationController {
   public function content() {
     return array(
       '#type' => 'markup',

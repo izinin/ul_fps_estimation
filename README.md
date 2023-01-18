@@ -23,12 +23,12 @@ The following example runs on Windows machine in Linux environment for linux (WS
 
 ## Use local development environment
 * start DDEV: `ddev start`
+* install `ul_benchmarks_estimation` module from git `git clone git@github.com:izinin/ul_fps_estimation.git web/modules/custom/ul_fps_estimation`
 * launch Drupal application: `ddev launch`
+* go to admin panel `/admin/modules` and enable `ul_benchmarks_estimation` module
+* see UL Benchmarks estimation service page: navigate to `/ul_fps_estimation` 
 * see Drupal config in user friendly table: `ddev describe`
 * stop DDEV: `ddev stop`
-
-## using the module in Drupal app
-* 
 
 ## References
 * [Drupal local development guide](https://www.drupal.org/docs/official_docs/en/_local_development_guide.html)
