@@ -42,4 +42,4 @@
 
 * [quickstart](https://ddev.readthedocs.io/en/latest/users/quickstart/#drupal)
 * [CLI usage](https://ddev.readthedocs.io/en/latest/users/usage/cli/)
-* remove project without deletion : `git@gitlab.fuma.fi:madison/madison-main.git`
+* remove project without deletion : `ddev stop --unlist PROJECT_NAME`
