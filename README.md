@@ -1,12 +1,8 @@
-# UL Benchmarks games performance estimation service for PC
-This is Drupal 10 module that demonstartes using [Retails API](https://support.benchmarks.ul.com/support/solutions/folders/44001219896?_ga=2.233832286.1974292819.1673444843-1911313958.1668416513) in the following details:
-* Using API key signed Auth header in HTTP requests
-* Querying the API and parsing the output
-* Caching the data for efficient use Retails API
-* Displaying the data on the frontend UI
+# madison-main
 
 ## Setup development environment 
-The following example runs on Windows machine in Linux environment for linux (WSL). 
+
+* Clone the project with sub-modules: `git clone --recurse-submodule git@gitlab.fuma.fi:madison/madison-main.git`
 
 ### Prerequisites
 * You need [Docker application](https://docs.docker.com/get-docker/) on your system
@@ -15,10 +11,11 @@ The following example runs on Windows machine in Linux environment for linux (WS
 
 ### Installing development environment
 * Install Drupal DDEV tool: `curl -L https://raw.githubusercontent.com/drud/ddev/master/scripts/install_ddev.sh | bash`
+* __(only once when the project is started)__ config : `ddev config --docroot web --project-name madison --project-type drupal10 --create-docroot`
 * start DDEV: `ddev start`
-* install Drupal: 
+* __(only once when the project is started)__ install Drupal: `ddev composer create "drupal/recommended-project"`
 * install command-line utility for Drupal, drush: `ddev composer require drush/drush`
-* populate the database with initial tables and create admin account: `ddev drush site:install --account-name=admin --account-pass=my-password`
+* populate the database with initial tables and create admin account: `ddev drush site:install --account-name=admin --account-pass=admin`
 * launch Drupal site: `ddev launch`
 
 ## Use local development environment
@@ -31,7 +28,20 @@ The following example runs on Windows machine in Linux environment for linux (WS
 * stop DDEV: `ddev stop`
 
 ## References
+
+### Drupal
+
+* [modules creation](https://www.drupal.org/docs/develop/creating-modules)
 * [Drupal local development guide](https://www.drupal.org/docs/official_docs/en/_local_development_guide.html)
 * [Downloading third-party libraries using Composer](https://www.drupal.org/docs/develop/using-composer/manage-dependencies#third-party-libraries)
 * [Drupal app directory structure](https://www.drupal.org/docs/understanding-drupal/directory-structure)
 * [extending Drupal](https://www.drupal.org/docs/extending-drupal)
+* [modules developer guide](https://www.drupal.org/developing/modules)
+* [project module directory](https://www.drupal.org/project/project_module)
+* [Drupal custom modules example](https://www.drupal.org/project/examples)
+
+### DDev
+
+* [quickstart](https://ddev.readthedocs.io/en/latest/users/quickstart/#drupal)
+* [CLI usage](https://ddev.readthedocs.io/en/latest/users/usage/cli/)
+* remove project without deletion : `git@gitlab.fuma.fi:madison/madison-main.git`
