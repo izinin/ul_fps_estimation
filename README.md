@@ -1,5 +1,3 @@
-# madison-main
-
 ## Setup development environment 
 
 * Clone the project with sub-modules: `git clone --recurse-submodule git@gitlab.fuma.fi:madison/madison-main.git`
